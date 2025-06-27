@@ -1,0 +1,637 @@
+/*----------------------------var--------------------*/
+:root{
+    --main-color:#4D8B55;
+}
+
+
+   /* ---------------------global------------*/
+   body{
+      font-family: 'Oswald',sans-serif;
+      font-weight: 400;
+      background-color: var(--main-color);
+      background-image: url(https://semicode.tech/build/assets/leaves_pattern-469e0d34.png);
+      color: #fff;
+   }
+   h1,h2,h3,h4,h5,h6{
+    font-family: 'Sansita Swashed',cursive;
+   }
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header_jana*/
+header{
+    height: 100vh;
+    position: relative;
+
+}
+header #carouselExampleFade  .carousel-inner .carousel-item{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+header #carouselExampleFade  .carousel-inner .carousel-item:nth-of-type(1){
+    background-image: url("https://semicode.tech/build/assets/banner1-a2f56ce7.jpg");
+    
+}
+header #carouselExampleFade  .carousel-inner .carousel-item:nth-of-type(2){
+    background-image: url("https://semicode.tech/build/assets/banner2-d06af301.jpg");
+}
+header #carouselExampleFade  .carousel-inner .carousel-item:nth-of-type(3){
+    background-image: url("https://semicode.tech/build/assets/banner3-9419d6ac.jpg");
+}
+header #carouselExampleFade  .carousel-inner .carousel-item:nth-of-type(4){
+    background-image: url("https://semicode.tech/build/assets/banner4-dc772093.jpg");
+}
+  
+header #carouselExampleFade  .carousel-inner .carousel-item::before{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+header #carouselExampleFade  .carousel-inner .carousel-item .container{
+    position: relative;
+}
+header #carouselExampleFade  .carousel-inner .carousel-item .carousel-caption{
+    right: initial ;
+    left: 0%;
+    top:50%;
+    transform: translatey(-50%);
+    height: fit-content;
+
+}
+header #carouselExampleFade  .carousel-inner .carousel-item .container .carousel-caption h5{
+font-size:80px;
+color: var(--main-color);
+position: relative;
+top: -30px;
+opacity: 0;
+transition-duration: 1s;
+}
+header #carouselExampleFade  .carousel-inner .carousel-item.active .container .carousel-caption h5{
+top: 0;
+opacity: 1;
+}
+
+header #carouselExampleFade  .carousel-inner .carousel-item .carousel-caption p{
+    letter-spacing: 1.5px;
+    position: relative;
+    top: -30px;
+    opacity: 0;
+    width: 75%;
+   transition-duration: 1s;
+   transition-delay: 0.3s;
+}
+header #carouselExampleFade  .carousel-inner .carousel-item.active .container .carousel-caption p{
+top: 0;
+opacity: 1;
+}
+
+
+header #carouselExampleFade  .carousel-inner .carousel-item .container .carousel-caption a {
+    border: 1px solid var(--main-color);
+    color:var(--main-color);
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+       top: -30px;
+    opacity: 0;
+    transition: 1s 0.5s !important;
+} 
+header #carouselExampleFade  .carousel-inner .carousel-item.active .container .carousel-caption a{
+top: 0;
+opacity: 1;
+}
+header #carouselExampleFade  .carousel-inner .carousel-item .carousel-caption a span{
+position: relative;
+z-index: 2;
+transition-duration: 1s;
+}
+header #carouselExampleFade  .carousel-inner .carousel-item .carousel-caption a:hover span{
+color: #fff;
+}
+header #carouselExampleFade  .carousel-inner .carousel-item .carousel-caption a::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width:100%;
+    top: 50%  ;
+    left: -100%;
+    border:25px solid var(--main-color);
+    border-right-color: transparent;
+    transform: translateY(-50%) ;
+    transition-duration: 1s;
+    z-index: 1px;
+}
+header #carouselExampleFade  .carousel-inner .carousel-item .carousel-caption a:hover::before{
+    left: 0;
+}
+header #carouselExampleFade  .carousel-inner .carousel-item .carousel-caption a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width:100%;
+    top: 50%  ;
+    right: -100%;
+    border:25px solid var(--main-color);
+    border-left-color: transparent;
+    transform: translateY(-50%) ;
+    transition-duration: 1s;
+    z-index: 1px;
+
+    
+}
+
+header #carouselExampleFade  .carousel-inner .carousel-item .carousel-caption a:hover::after{
+    right: 0;
+}
+header #carouselExampleFade .carousel-indicators button{
+border-radius: 100%;
+width: 10px;
+height: 10px;
+background-color: var(--main-color);
+opacity: 0.5;
+}
+header #carouselExampleFade .carousel-indicators button.active{
+    opacity: 1;
+}
+header .navbar{
+    position: absolute;
+    z-index: 800000;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+header nav.navbar .navbar-brand{
+    width: 7%;
+
+}
+header nav.navbar  .navbar-collapse .nav-item .nav-link{
+    color: #fff;
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+}
+header nav.navbar .navbar-collapse .nav-item .nav-link span:not(.text){
+    display: block;
+    width: 100%;
+    height: 33.33%;
+    top: 0%;
+    background-color: var(--main-color);
+    position: absolute;
+    z-index: 1;
+
+    
+}
+header nav.navbar .navbar-collapse .nav-item:not(:last-child){
+    margin-right: 10px;
+}    
+header nav.navbar .navbar-collapse .nav-item .nav-link span{
+  transition-duration: 0.5s;
+}
+header nav.navbar .navbar-collapse .nav-item .nav-link span.top{
+    top:0%;
+    left: -100%;
+    border-top-left-radius: 10px;
+}
+header nav.navbar .navbar-collapse .nav-item .nav-link span.middle{
+    top:33.33%;
+    right: -100%;
+}
+header nav.navbar .navbar-collapse .nav-item .nav-link span.bottom{
+    top:66.66%;
+    left: -100%;
+    border-bottom-right-radius: 10px;
+}
+header nav.navbar .navbar-collapse .nav-item .nav-link:hover span.top{
+left: 0%;
+}
+header nav.navbar .navbar-collapse .nav-item .nav-link:hover span.middle{
+right: 0%;
+}
+header nav.navbar .navbar-collapse .nav-item .nav-link:hover span.bottom{
+left: 0%;
+}
+header nav.navbar .navbar-collapse .nav-item .nav-link span.text{
+    position: relative;
+    z-index: 3;
+}
+#About .col-lg-8  .col-lg-4 > .item{
+    position: relative;
+    width: 230px;
+    height: 390px;
+
+}
+#About .col-lg-8 .col-lg-4 .item .front{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+      backface-visibility: hidden;
+     transition-duration: 2s;
+}
+#About .col-lg-8 .col-lg-4:nth-of-type(1) .item .front{
+    background-image: url(https://semicode.tech/build/assets/about_front_01-306d5b8a.jpg);
+}
+#About .col-lg-8 .col-lg-4:nth-of-type(2) .item .front{
+    background-image: url(https://semicode.tech/build/assets/about_front_02-c62ba359.jpg);
+}
+#About .col-lg-8 .col-lg-4:nth-of-type(3) .item .front{
+    background-image: url(https://semicode.tech/build/assets/about_front_03-5baa1bab.jpg);
+}
+#About .col-lg-8 .col-lg-4 .item:hover .front{
+         transform: rotateY(180deg);
+       
+}
+#About .col-lg-8  .col-lg-4 .item .back{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    border-radius: 10px;
+    transition-duration: 2s;
+    overflow: hidden;
+
+}
+#About .col-lg-8  .col-lg-4 .item .back .body p{
+    padding: 0px 10px 5px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+}
+#About .col-lg-8  .col-lg-4 .item .back .body button{
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    border: 1px solid #fff;
+    position: relative;
+    color: #fff;
+    border-radius: 15px;
+    padding: 5px 20px;
+   transition: all 0.5s ease-in-out;
+}
+#About .col-lg-8  .col-lg-4 .item .back .body button i {
+    transition: all 0.5s ease-in-out;
+}
+#About .col-lg-8  .col-lg-4 .item .back .body button:hover i{
+    margin-left: 5px;   
+}
+#About .col-lg-8  .col-lg-4 .item .back .body button:hover {
+    color: #404042;
+    background-color: #fff;
+}
+#About .col-lg-8 .col-lg-4 .item:hover .back{
+         transform: rotateY(0deg);
+}
+#About .col-lg-8 .col-lg-4:nth-of-type(1) .item .back {
+    background-color: #404042;
+}
+#About .col-lg-8 .col-lg-4:nth-of-type(2) .item .back {
+    background-color: #88774b;
+}
+#About .col-lg-8 .col-lg-4:nth-of-type(3) .item .back {
+    background-color:  #6d1f37;
+}
+#About span{
+    font-size: 15px;
+    font-weight: 300;
+
+}
+#About h2{
+    font-size: 60px;
+    font-weight: 500;
+}
+#About .col-lg-4 .item p{
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    font-weight: 400;
+}
+#About .col-lg-4  a{
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 10px;
+  position: relative;
+   overflow: hidden;
+   text-align: center;
+   font-weight: 400;
+}
+
+#About .col-lg-4 a::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    position: absolute;
+    top:-50%;
+    transition-duration: 1s;
+    left: 0%;
+}
+#About .col-lg-4  a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    position: absolute;
+    bottom: -50%;
+    transition-duration: 1s;
+    left: 0%;
+}
+#About .col-lg-4  a:hover::before{
+top:0%;
+}
+#About .col-lg-4  a:hover::after{
+bottom:0%;
+}
+#About .col-lg-4  a span{
+    position:relative;
+    z-index: 500;
+    transition-duration: 1s;
+    font-size: 20px;
+}
+#About .col-lg-4  a:hover span{
+   color: var(--main-color);
+}
+#Services{
+ background-image: url(https://semicode.tech/build/assets/beans_bg-aaa84446.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+#Services::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0%;
+    left: 0%;
+    z-index: 2;
+}
+#Services .container{
+    position: relative;
+    z-index: 80000;
+}
+#Services .container h2{
+    font-size: 50px;
+}
+#Services i{
+    font-size: 40px;
+    color: var(--main-color);
+}
+#Services .container h4{
+    font-size: 30px;
+}
+#Services .container p{
+    color: #C1C1C1;
+}
+#Services .col-lg-4:nth-of-type(2){
+      animation-name: animations;
+    animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease;
+
+}
+@keyframes animations {
+    0%{
+        transform: translatey(-25px);
+    }
+    100%{
+         transform: translatey(0px);
+    }
+}
+#Menu .container h2{
+    font-size: 50px;
+}
+#Menu ul.nav {
+    border: 2px solid #fff;
+    width: fit-content;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+
+
+}
+#Menu ul.nav li button.nav-link{
+    color: #fff;
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+    transition-duration: 1s;
+    margin: 5px;
+
+}
+#Menu ul.nav li button.nav-link.active{
+    background-color: #fff;
+    color: var(--main-color);
+}
+
+#Menu ul.nav li button:hover.nav-link:not(.active){
+    background-color: #fff;
+    color: var(--main-color);
+}
+#Menu .tab-content  .tab-pane img{
+    border-radius: 10px;
+    transform: scale(0.8);
+    transition-duration: 1s;
+
+}
+#Menu .tab-content  .tab-pane .item{
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+    transform: scale(0);
+
+}
+#Menu .tab-content  .tab-pane.show .item{
+    transform: scale(1);
+    transition-duration: 2s;
+
+}
+#Menu .tab-content  .tab-pane h4{
+    position: absolute;
+    top: 20px;
+    left: -100%;
+     background-color: var(--main-color);
+    background-image: url(https://semicode.tech/build/assets/leaves_pattern-469e0d34.png);
+    color: #fff;
+    border-radius: 0px 5px 5px 0px;
+    padding: 5px 10px;
+    font-size: 20px;
+    transition-duration: 1s;
+
+}
+#Menu .tab-content  .tab-pane p{
+    position: absolute;
+    bottom: 20px;
+    left: -100%;
+    background-color: var(--main-color);
+    background-image: url(https://semicode.tech/build/assets/leaves_pattern-469e0d34.png);
+    color: #fff;
+    border-radius: 0px 5px 5px 0px;
+    padding: 5px 10px;
+    font-size: 15px;
+    transition-duration: 1s;
+}
+#Menu .tab-content .tab-pane .item:hover img{
+    transform: scale(1.02);
+}
+#Menu .tab-content .tab-pane .item:hover h4{
+    left: 0px;
+}
+#Menu .tab-content .tab-pane .item:hover p{
+    left: 0px;
+}
+#Beans{
+    background-image: url(https://semicode.tech/build/assets/ice_drinks_bg-a22d2b06.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Beans .container h2{
+    color: var(--main-color);
+    font-size: 90px;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 2px #000;
+}
+#Beans .container h5{
+    font-size: 50px;
+    letter-spacing: 1.5px;
+}
+#Beans::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#Beans .container{
+    position: relative;
+    z-index: 2;
+}
+#Beans .container i{
+      font-size: 90px;
+      color: #fff;
+}
+#Beans .container i:hover{
+      color: var(--main-color);
+      cursor: pointer;
+}
+.modal-dialog{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-dialog  .model-content video{
+    border-radius: 10px;
+
+}
+#book .container h2{
+    font-size: 50px;
+}
+#book{
+    background-image: url(https://semicode.tech/build/assets/leaves_pattern-469e0d34.png);
+    background-position: center;
+    background-size: cover;
+    background-color:#212020 ;
+     position: relative;
+}
+#book .bg-img{
+    background-image: url(https://semicode.tech/build/assets/girl-27400801.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 60%;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    background-position: bottom center;
+}
+#book form{
+    width: 70%;
+    margin: auto;
+    background-color: var(--main-color);
+    background-image: url(https://semicode.tech/build/assets/leaves_pattern-469e0d34.png);
+      color: #fff;
+      padding: 20px 40px;
+      border-radius: 10px;
+      margin-top: 30px;
+      text-align: center;
+}
+#book .btn{
+   position: relative;
+   overflow: hidden;
+   border: 1px solid var(--main-color);
+   width: 100%;
+}
+#book .btn::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  background-color:var(--main-color);
+    transition-duration: 1s;
+}
+#book .btn:hover::before{
+    bottom: 0%;
+}
+#book .btn span{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#book .btn:hover{
+    border: 1px solid #fff;
+}
+#book .btn:hover span{
+  z-index: 3;
+  color: #fff;
+}
+#book form input::placeholder,
+#book form textarea::placeholder,#book form input::-webkit-datetime-edit-fields-wrapper{
+    color: #777;
+}
+.footer {
+    text-align: center;
+    color: #ffffff;
+    background-color: #333333;
+    font-size: 20px;
+    border-top: 1px solid #444;
+    padding: 10px;
+}
+

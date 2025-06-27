@@ -1,0 +1,118 @@
+/*  350 
+    450
+    650
+    850
+    1050
+    */
+
+@media (max-width :1300px) {
+    header #carouselExampleFade  .carousel-inner .carousel-item .container .carousel-caption h5{
+     font-size:30px;}
+     header #carouselExampleFade  .carousel-inner .carousel-item .container .carousel-caption p{
+     width: 100%;
+} 
+     header #carouselExampleFade  .carousel-inner .carousel-item .container .carousel-caption {
+       left: initial;
+} 
+   header nav.navbar .navbar-brand{
+    width: 25%;
+
+}
+  header nav.navbar .navbar-toggler{
+    background-color:transparent;
+    border-color:#4D8B55;
+}
+  header nav.navbar .navbar-toggler span .navbar-toggler-icon{
+    color: #4D8B55;
+}
+    header nav.navbar .navbar-toggler[aria-expanded="true"]{
+      box-shadow: none;
+    }
+        header nav.navbar .navbar-toggler:focus{
+      box-shadow: none;
+    }
+     header nav.navbar .navbar-collapse .navbar-nav{
+      background-color: black;
+      border-radius: 10px;
+      text-align: center;
+      padding: 10px 0px;
+    } 
+     header nav.navbar .navbar-collapse .navbar-nav .nav-item{
+        margin: auto;
+        width: 90%;
+      
+     }
+     #Menu .tab-content  .tab-pane.show .item{
+      max-width: 280px;
+      margin: auto;
+     }
+     #Menu ul.nav {
+      width: max-content;
+      flex-wrap: nowrap;
+     }
+     #Menu .link{
+      overflow: auto;
+     }
+     #Beans .container h2{
+    font-size: 40px;
+     
+}
+     #Beans .container h5{
+    font-size: 30px;
+     
+}
+     #Beans .container i{
+    font-size: 60px;
+     
+}
+#book .bg-img{
+  display: none;
+}
+#book form{
+  width:100% ;
+}
+
+}
+@media (min-width:371px) and (max-width :1300px) {
+    
+}
+@media  (min-width:577px) and (max-width :1300px){
+    header #carouselExampleFade  .carousel-inner .carousel-item .container .carousel-caption h5{
+     font-size:55px;}
+     #book form{
+  width:80% ;
+}
+}
+@media  (min-width:769px) and (max-width :1300px){
+  #book .bg-img{
+  display: block;
+}
+     #book form{
+  width:100% ;
+  
+}
+
+}
+
+@media  (min-width:993px) and (max-width :1300px){
+     header #carouselExampleFade  .carousel-inner .carousel-item .container .carousel-caption p{
+     width: 75%;
+    }
+     header nav.navbar .navbar-collapse .navbar-nav{
+      width:initial;
+    background-color: transparent;
+
+     }
+       header nav.navbar .navbar-toggler{
+          display: none;
+}
+     header nav.navbar .navbar-collapse .nav-item{
+      margin: initial;
+      margin-right: 10px;
+      width: 100%;
+     }
+    
+}
+@media  (min-width:1181px) and (max-width :1300px){
+    
+}
